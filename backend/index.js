@@ -49,7 +49,7 @@ app.get('/auth/google/callback',
         const userEmail = req.user.emails[0].value;
         req.session.userEmail = userEmail;
         // res.send({ email: userEmail, msg: 'Login Successfully' });
-        res.redirect('http://localhost:3000/Menu');
+        res.redirect('https://frontend-flax-chi.vercel.app/Menu');
       
     });
 
