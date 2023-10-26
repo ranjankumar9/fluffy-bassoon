@@ -24,7 +24,7 @@ app.use(session({
 passport.use(new GoogleStrategy({
     clientID: '541573908328-f4p5hkn05h3m173l77b4qsno381f84v7.apps.googleusercontent.com',
     clientSecret: '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',
-    callbackURL: 'http://localhost:8080/auth/google/callback',
+    callbackURL: 'https://frontend-flax-chi.vercel.app/auth/google/callback',
     scope: ['profile', 'email']
 }, (accessToken, refreshToken, profile, done) => {
     return done(null, profile);
